@@ -7,22 +7,22 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #64033c; /* Background color for the entire website, including individual sections */
+  --default-color: #f5faff; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #f8f0f5; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #f8ecf2; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #46052d; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #45505b;  /* The default color of the main navmenu links */
-  --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #c50db6;  /* The default color of the main navmenu links */
+  --nav-hover-color: #bb11b2; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0563bb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #f1f4f8; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #f51aa1; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -33,10 +33,10 @@
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #d316b3;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #920f71;
   --contrast-color: #ffffff;
 }
 
@@ -79,7 +79,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #9c0890;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -90,7 +90,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: #700346;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -207,7 +207,7 @@ h6 {
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
+  color:light rgb(233, 235, 241);
   font-family: var(--nav-font);
   display: flex;
   align-items: center;
@@ -268,7 +268,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: #53044f;
   background-color: var(--background-color);
   font-size: 14px;
   text-align: center;
@@ -277,6 +277,7 @@ h6 {
 }
 
 .footer h3 {
+  color: #b1107b;
   font-size: 36px;
   font-weight: 700;
   position: relative;
@@ -301,7 +302,7 @@ h6 {
   align-items: center;
   justify-content: center;
   background: var(--accent-color);
-  color: var(--contrast-color);
+  color:rgb(48, 1, 48);
   line-height: 1;
   margin: 0 4px;
   border-radius: 50%;
@@ -312,7 +313,7 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--accent-color), transparent 30%);
   text-decoration: none;
 }
 
@@ -322,8 +323,12 @@ h6 {
 }
 
 .footer .credits {
+  color: #3f033a;
   font-size: 13px;
   padding-top: 5px;
+}
+.footer .credits > a {
+  color: #3f033a;
 }
 
 /*--------------------------------------------------------------
@@ -343,7 +348,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #ffffff;
+  border: 6px solid #cf15a1;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
   width: 60px;
@@ -566,7 +571,7 @@ section,
 }
 
 .hero .social-links a:hover {
-  color: var(--accent-color);
+  color:rgb(36, 1, 36);
 }
 
 @media (max-width: 768px) {
@@ -850,7 +855,7 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 90px 0px rgba(245, 106, 199, 0.1);
   height: 100%;
   padding: 60px 30px;
   text-align: center;
@@ -903,7 +908,7 @@ section,
 }
 
 .services .service-item.item-cyan i {
-  color: #0dcaf0;
+  color: #5a0453;
 }
 
 .services .service-item.item-cyan:hover .icon i {
@@ -911,7 +916,7 @@ section,
 }
 
 .services .service-item.item-cyan:hover .icon path {
-  fill: #0dcaf0;
+  fill: #a80a79;
 }
 
 .services .service-item.item-orange i {
@@ -951,7 +956,7 @@ section,
 }
 
 .services .service-item.item-indigo i {
-  color: #6610f2;
+  color: #c21287;
 }
 
 .services .service-item.item-indigo:hover .icon i {
@@ -1001,8 +1006,12 @@ section,
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--surface-color), transparent 40%);
   margin: 0 0 10px 0;
+}
+
+.differenttitle h4 {
+  color: #f1f4f8;
 }
 
 .testimonials .testimonial-item .stars i {
